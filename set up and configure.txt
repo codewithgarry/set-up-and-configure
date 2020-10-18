@@ -7,8 +7,8 @@
 
 ----------------Task 1: Create development VPC manually--------------------
 
-for this task becouse it is mention develop manually .....
-we will perform it manually
+For this task because it is mentioned to develop manually .....
+We will perform it manually
 
 
 
@@ -34,6 +34,7 @@ cd ..
 
 -------------Task 3: Create bastion host----------------------------------------
 
+You can copy the below three commands at a time and run them on the Cloud shell.------
 
 gcloud compute instances create bastion --network-interface=network=griffin-dev-vpc,subnet=griffin-dev-mgmt  --network-interface=network=griffin-prod-vpc,subnet=griffin-prod-mgmt --tags=ssh --zone=us-east1-b
 
@@ -86,11 +87,15 @@ sed -i s/username_goes_here/wp_user/g wp-env.yaml
 
 sed -i s/password_goes_here/stormwind_rules/g wp-env.yaml
 
+----------------------------------------------------------------------------------
+
 kubectl create -f wp-env.yaml
 
 gcloud iam service-accounts keys create key.json --iam-account=cloud-sql-proxy@$GOOGLE_CLOUD_PROJECT.iam.gserviceaccount.com
 
 kubectl create secret generic cloudsql-instance-credentials --from-file key.json
+
+----------------------------------------------------------------------------------
 
 
 I=$(gcloud sql instances describe griffin-dev-db --format="value(connectionName)")
