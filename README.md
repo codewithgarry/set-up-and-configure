@@ -1,5 +1,7 @@
 # Set Up and Configure a Cloud Environment in Google Cloud: Challenge Lab (GSP321)
 
+> 📦 **Archived.** This lab is now maintained in **[google-cloud-skills-boost-notes](https://github.com/codewithgarry/google-cloud-skills-boost-notes/tree/main/compute-networking/gsp321-set-up-and-configure-a-cloud-environment)** with my other Google Cloud lab notes. This repository is read-only.
+
 ![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?logo=googlecloud&logoColor=white)
 ![Lab](https://img.shields.io/badge/Lab-GSP321-34A853)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white)
